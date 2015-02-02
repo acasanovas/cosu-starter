@@ -1,23 +1,20 @@
 CoSu Starter Toolkit
 ==========================
-
 A starter toolkit for [Sass](http://sass-lang.com/) projects with [Susy](http://susy.oddbird.net/) "Magic Grids".
 
 Directory structure
 -------------------
-
-
 ```
-    package.json	# Grunt metadata & dependencies
+    package.json	# Grunt metadata and dependencies
     index.html		# Starter HTML template
-    gruntfile.js	# Grunt configuration & tasks
+    gruntfile.js	# Grunt configuration and tasks
 	Gemfile			# Gem project dependencies
 	config.rb		# Compass configuration file
 	.gitignore		# .gitignore file
 	components/
 	|
 	|-- sass/
-	|   |-- base/					# Base style of wherever element and how this should look like.
+	|   |-- base/					# Essentially, a base style says that wherever this element is on the page, it should look like this
 	|	|	|-- _index.scss 		# Imports everything on base
 	|	|	|-- _mixins.scss 		# mixins
 	|	|	|-- _functions.scss 	# functions
@@ -27,10 +24,10 @@ Directory structure
 	|	|	|-- _base.scss			# base
 	|	|	`-- _typography.scss	# typography
 	|	|
-	|   |-- layout/					# Divide the page into sections. Layouts hold modules together.
+	|   |-- layout/					# Divides the page into sections. Layouts hold modules together
 	|	|	`-- _index.scss 		# Imports everything on layout
 	|	|
-	|   |-- modules/				# Modular parts of our design.
+	|   |-- modules/				# Modular parts of our design. They are the callouts, the sidebar sections, the product lists and so on
 	|	|	`-- _index.scss 		# Imports everything on modules
 	|	|
 	|   |-- vendors/				# Third party components
@@ -42,7 +39,6 @@ Directory structure
 	`-- js/
 		`-- script.js 				# Starter JS template
 ```
-
 
 Quick start
 -----------
