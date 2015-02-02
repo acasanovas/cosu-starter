@@ -1,0 +1,46 @@
+@import "compass";
+
+body {
+	background: $color-background-shade;
+	font-family: $font-primary; 
+	color: $color-text;
+}
+
+#{headings()} {
+	font-family: $font-primary;
+	font-weight: $font-weight-normal;
+	color: $color-text-heading;
+}
+
+h1 {
+	// @include adjust-font-size-to(24px);
+	// font-weight: $semibold;
+	// color: $white;
+	// margin-bottom: .4em;
+}
+h2 {}
+h3 {}
+h4 {}
+
+p {
+	@include adjust-font-size-to($font-size-large);
+	font-weight: $font-weight-light;
+	color: $color-text;
+}
+
+b {
+	font-weight: $font-weight-bold;
+}
+
+i {}
+
+a {
+	text-decoration: none;
+	&:hover {}
+}
+
+button {}
+
+ul {
+	li {}
+}

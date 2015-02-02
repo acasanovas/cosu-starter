@@ -1,0 +1,20 @@
+// px to em conversion
+// http://www.pjmccormick.com/sweet-sass-function-convert-px-em
+@function em($target, $context: $base-font-size) {
+   @if $target == 0 { @return 0 }
+   @return $target / $context + 0em;
+}
+
+// px to rem
+// http://www.pjmccormick.com/sweet-sass-function-convert-px-em
+@function rem($target, $context: $base-font-size) {
+  @if $target == 0 { @return 0 }
+  @return $target / $context + 0rem;
+}
+
+// em to px conversion
+// http://www.pjmccormick.com/sweet-sass-function-convert-px-em
+@function px($target, $context: $base-font-size) {
+  @if $target == 0 { @return 0 }
+  @return $target * $context + 0px;
+}

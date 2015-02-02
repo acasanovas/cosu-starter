@@ -1,0 +1,19 @@
+@import "susy";
+@import "breakpoint";
+
+$susy: (
+  	global-box-sizing: $grid-box-sizing,
+  	use-custom: (rem: true),
+  	columns: $grid-columns,
+    gutters: $grid-gutters,
+  	debug: (
+  		image: $grid-debug-image,
+  		output: $grid-debug-output,
+  		toggle: $grid-debug-toogle,
+  		color: $grid-debug-color
+  	)
+);
+
+.wrap {
+  @include container();
+}
