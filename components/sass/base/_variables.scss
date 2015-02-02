@@ -2,13 +2,31 @@
 // http://susydocs.oddbird.net/en/latest/
 // ==============
 
-$grid-columns: 16;
-$grid-gutters: 1/4;
-$grid-box-sizing: border-box;
-$grid-debug-image: hide; // show | hide | show-columns | show-baseline
-$grid-debug-output: background; //background | overlay
-$grid-debug-toogle: top right;
+$grid-flow: ltr; // Options: rtl | ltr
+$grid-math: fluid; // Options: fluid | static
+$grid-output: float; // Options: float | isolate
+$grid-gutter-position: after; // Options: before | after | split | inside | inside-static
+$grid-container: auto; // Options: <length> | auto
+$grid-container-position: center; // Options: left | center | right | <length> [*2]
+$grid-columns: 16; // Options: <number> | <list>
+$grid-gutters: .25; // Options: <ratio>
+$grid-column-width: false; // Options: <length> | false/null
+$grid-global-box-sizing: border-box; // Options: border-box | content-box
+$grid-last-flow: to; // Options: from | to
+
+// Debug
+$grid-debug-image: hide; // Options: show | hide | show-columns | show-baseline
 $grid-debug-color: rgba(#66f, .25);
+$grid-debug-output: background; // Options: background | overlay
+$grid-debug-toggle: top right; // Options: right | left and top | bottom
+
+// Use custom
+$grid-use-custom-background-image: true;
+$grid-use-custom-background-options: false;
+$grid-use-custom-box-sizing: true;
+$grid-use-custom-clearfix: false;
+$grid-use-custom-rem: true;
+
 
 
 // Pesticide

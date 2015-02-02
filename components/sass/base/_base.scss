@@ -1,9 +1,11 @@
 @import "compass";
 
-body {
+html {
 	background: $color-background-shade;
 	font-family: $font-primary; 
 	color: $color-text;
+	text-rendering: optimizeLegibility;
+	@include font-smoothing(on);
 }
 
 #{headings()} {
