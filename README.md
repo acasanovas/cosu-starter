@@ -1,8 +1,8 @@
 CoSu Starter Toolkit
 ==========================
 
-This is a starter toolkit that uses [Sass](http://sass-lang.com/) and [Susy](http://susy.oddbird.net/) "Magic Grids" which is intended to start developing a Web project.
-With CoSu this developement will be fast and well structured, designed to be easily manitainable and extendable.
+This is a starter toolkit that uses [Sass](http://sass-lang.com/) and [Susy](http://susy.oddbird.net/) "Magic Grids" and is intended to start developing a Web project.
+With CoSu this developement will be fast and well structured, designed to be easily maintainable and extendable.
 
 Structuring a project on modules will allow you to reuse common parts on other projects, and this will incredibly increase your team workflow or even yours.
 
@@ -18,17 +18,17 @@ Directory structure
 	components/
 	|
 	|-- sass/
-	|   |-- base/					# Essentially, a base style says that wherever this element is on the page, it should look like this
+	|   |-- base/					# Default settings
 	|	|	|-- _mixins.scss 		# Custom mixins
 	|	|	|-- _functions.scss 	# Custom functions
-	|	|	|-- _reset.scss			# Reset elements
-	|	|	|-- _colors.scss 		# Define colors
-	|	|	|-- _required.scss 		# Import the required extensions
+	|	|	|-- _reset.scss			# Resets elements
+	|	|	|-- _colors.scss 		# Defines colors
+	|	|	|-- _required.scss 		# Imports the required extensions
 	|	|	|-- _defaults.scss		# Default settings and values
-	|	|	|-- _typography.scss	# Set up the fonts
+	|	|	|-- _typography.scss	# Sets up the fonts
 	|	|	`-- _index.scss 		# Imports everything on base
 	|	|
-	|   |-- layout/					# Divides the page into sections. Layouts hold modules together
+	|   |-- layout/					# Specific styles
 	|	|	|-- _content.scss		# Section styles
 	|	|	|-- _footer.scss		# Footer styles
 	|	|	|-- _grid.scss			# Susy grid
@@ -59,7 +59,7 @@ Directory structure
 Quick start
 -----------
 1. Clone this repository.
-2. Instal the required Ruby gems - `bundle install`.
+2. Install the required Ruby gems - `bundle install`.
 3. Install the required Node modules - `npm install`.
 4. Ready, just run `grunt watch`.
 
