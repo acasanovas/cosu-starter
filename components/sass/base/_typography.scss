@@ -1,9 +1,15 @@
-// Import font from url
+// ============================================================================
+//  Typography
+// ============================================================================
 
-@import url($fonts-url);
+// Import font from url
+// ----------------------------------------------------------------------------
+
+@import url($font-url);
 
 // Compass Vertical Rhythm
 // http://compass-style.org/reference/compass/typography/vertical_rhythm/
+// ----------------------------------------------------------------------------
 
 $base-font-family: $font-primary;
 $base-font-size: $font-size-default;
@@ -12,3 +18,16 @@ $round-to-nearest-half-line: true; // Allows compass to round to  multiples of 0
 $rhythm-unit: "rem";
 
 @include establish-baseline;
+
+
+html {
+	//font-size breakpoints
+}
+body {
+	//default style
+	font-family: $font-primary;
+	text-rendering: optimizeLegibility;
+	@include font-smoothing(on);
+	@include adjust-font-size-to($font-size-default);
+}
+

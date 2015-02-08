@@ -1,5 +1,9 @@
 // ============================================================================
-//  Reset
+//  Images
 // ============================================================================
 
-@import 'compass/reset';
+img {
+    max-width: 100%;
+    font-style: italic; // alt text
+    vertical-align: middle; // removes the whitespace under `img` elements
+}

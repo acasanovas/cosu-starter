@@ -1,0 +1,79 @@
+// ============================================================================
+//  Content
+// ============================================================================
+
+.wrap {
+	padding: 0 gutter(6);
+}
+
+.typography {
+	margin-bottom: gutter(3);
+	@include breakpoint($tablet-large){
+		margin-bottom: gutter(6);
+	}
+	.header {
+		@include full;
+		padding-bottom: 0.9em;
+		@include breakpoint($tablet-large) {
+			padding-bottom: 2.2em;
+		}
+	}
+	.headings {
+		@include span(12);
+		margin-bottom: gutter(6);
+		@include breakpoint($tablet-large){
+			@include span(6);
+			margin-bottom: 0;
+		}
+	}
+	.text {
+		@include span(12);
+		margin-bottom: gutter(6);
+		@include breakpoint($tablet-large){
+			@include span(last 6);
+			margin-bottom: 0;
+		}
+	}
+	.blockquotes {
+		> .header{
+			@include span(12);
+		}
+		.left {
+			@include span(12);
+			margin-bottom: gutter(6);
+			@include breakpoint($tablet-large){
+				@include span(6);
+				margin-bottom: 0;
+			}
+		}
+		.right {
+			@include span(12);
+			@include breakpoint($tablet-large){
+				@include span(last 6);
+			}
+		}
+	}
+}
+
+.buttons {
+	margin-bottom: gutter(6);
+	.header {
+		@include full;
+		padding-bottom: 1.5em;
+		@include breakpoint($tablet-large) {
+			padding-bottom: 2.6em;
+		}
+	}
+	.types {
+		@include span(12);
+		@include breakpoint($tablet-large){
+				@include span(6);
+		}
+	}
+	.blocks {
+		@include span(12);
+		@include breakpoint($tablet-large){
+				@include span(last 6);
+		}
+	}
+}

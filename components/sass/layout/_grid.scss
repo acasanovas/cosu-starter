@@ -1,0 +1,71 @@
+// ============================================================================
+//  Grid - http://susydocs.oddbird.net/en/latest/
+// ============================================================================
+
+@import "susy";
+
+// Grid settings
+// ----------------------------------------------------------------------------
+
+$grid-flow: ltr; // Options: rtl | ltr
+$grid-math: fluid; // Options: fluid | static
+$grid-output: float; // Options: float | isolate
+$grid-gutter-position: after; // Options: before | after | split | inside | inside-static
+$grid-container: auto; // Options: <length> | auto
+$grid-container-position: center; // Options: left | center | right | <length> [*2]
+$grid-columns: 12; // Options: <number> | <list>
+$grid-gutters: .25; // Options: <ratio>
+$grid-column-width: false; // Options: <length> | false/null
+$grid-global-box-sizing: border-box; // Options: border-box | content-box
+$grid-last-flow: to; // Options: from | to
+
+// Debug
+$grid-debug-image: hide; // Options: show | hide | show-columns | show-baseline
+$grid-debug-color: rgba(#66f, .25);
+$grid-debug-output: background; // Options: background | overlay
+$grid-debug-toggle: top right; // Options: right | left and top | bottom
+
+// Use custom
+$grid-use-custom-background-image: true;
+$grid-use-custom-background-options: false;
+$grid-use-custom-box-sizing: true;
+$grid-use-custom-clearfix: false;
+$grid-use-custom-rem: true;
+
+
+
+// Grid setup
+// ----------------------------------------------------------------------------
+$susy: (
+    flow: $grid-flow,
+    math: $grid-math,
+    output: $grid-output,
+    gutter-position: $grid-gutter-position,
+    container: $grid-container,
+    container-position: $grid-container-position,
+    columns: $grid-columns,
+    gutters: $grid-gutters,
+    column-width: $grid-column-width,
+    global-box-sizing: $grid-global-box-sizing,
+    last-flow: $grid-last-flow,
+    debug: (
+      image: $grid-debug-image,
+      color: $grid-debug-color,
+      output: $grid-debug-output,
+      toggle: $grid-debug-toggle,
+    ),
+    use-custom: (
+      background-image: $grid-use-custom-background-image,
+      background-options: $grid-use-custom-background-options,
+      box-sizing: $grid-use-custom-box-sizing,
+      clearfix: $grid-use-custom-clearfix,
+      rem: $grid-use-custom-rem,
+    )
+);
+
+.wrap {
+  @include container();
+  @include breakpoint($screen-small) {
+    @include container($screen-small);
+  }
+}

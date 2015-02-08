@@ -1,3 +1,7 @@
+// ============================================================================
+//  Mixins
+// ============================================================================
+
 // Retina images
 // http://chrisltd.com/blog/2013/05/retina-images-sass/
 
@@ -57,6 +61,16 @@
       -webkit-font-smoothing: subpixel-antialiased;
       -moz-osx-font-smoothing: auto;
   }
+}
+
+
+// vendor prefixes
+@mixin vendor($property, $value...) {
+  -webkit-#{$property}: $value;
+  -moz-#{$property}: $value;
+  -ms-#{$property}: $value;
+  -o-#{$property}: $value;
+  #{$property}: $value;
 }
 
 // vertical center

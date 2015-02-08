@@ -1,0 +1,77 @@
+// ============================================================================
+//  Defaults
+// ============================================================================
+
+// Debug
+// ==============
+
+// pesticide
+$pesticide-debug-outline: false;
+$pesticide-debug-depth: false;
+
+//	Font sizes
+// 	http://sass-lang.com/styleguide/typography
+// ----------------------------------------------------------------------------
+
+$font-url: 'http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900';
+$font-primary: 'Source Sans Pro', sans-serif;
+$line-height-default: 24px;
+
+$font-size-small: 14px;
+$font-size-regular: 16px;
+$font-size-default: $font-size-regular;
+$font-size-large: 20px;
+$font-size-x-large: 24px;
+$font-size-xx-large: 30px;
+$font-size-xxx-large: 36px;
+$font-size-xxxx-large: 64px;
+$font-size-xxxxx-large: 96px;
+
+$font-weight-thin: 100;
+$font-weight-extralight: 200;
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+$font-weight-extrabold: 800;
+$font-weight-ultrabold: 900;
+
+
+//  Breakpoints
+//	http://sass-lang.com/styleguide/layout
+// ----------------------------------------------------------------------------
+
+$mobile-small: 15em; //240px
+$mobile-large: 20em; //320px
+$tablet-small: 30em; //480px
+$tablet-large: 48em; //768px
+$screen-small: 64em; //1024px
+$screen-large: 80em; //1280px
+$screen-x-large: 1320px;
+$screen-xx-large: 1720px;
+
+//  z-index
+//	http://www.sitepoint.com/better-solution-managing-z-index-sass/
+// ----------------------------------------------------------------------------
+
+$z-layers: (
+  modal                       : 9000,
+  overlay                     : 8000,
+  dropdown                    : 7000,
+  header                      : 6000,
+  footer                      : 5000
+);
+
+@function z($layer) {
+  @return map-get($z-layers, $layer);
+}
+
+
+// HTML element defaults
+// ----------------------------------------------------------------------------
+
+html {
+	background: $color-background;
+	color: $color-text;
+}
