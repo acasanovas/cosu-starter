@@ -18,7 +18,7 @@ Directory structure
 	components/
 	|
 	|-- sass/
-	|   |-- base/					# Default settings
+	|   |-- base/					# Defaults settings
 	|	|	|-- _mixins.scss 		# Custom mixins
 	|	|	|-- _functions.scss 	# Custom functions
 	|	|	|-- _reset.scss			# Resets elements

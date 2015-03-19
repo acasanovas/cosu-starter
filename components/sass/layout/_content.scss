@@ -77,3 +77,54 @@
 		}
 	}
 }
+
+
+.grid {
+	margin-bottom: gutter(6);
+	.header {
+		@include full;
+		padding-bottom: 1.5em;
+		@include breakpoint($tablet-large) {
+			padding-bottom: 2.6em;
+		}
+	}
+
+	.types {
+		@include span(12);
+		text-align: center;
+		
+		>.wrap { 
+			padding: 0;
+			// @include layout(before);
+		}
+		
+		.grid {
+			@for $i from 1 through $grid-columns{
+				&.push-#{$i}{
+					@include push($i);
+				}
+				&.pull-#{$i}{
+					@include pull($i);
+				}
+				&.col-#{$i}{
+					@include span($i);
+				}
+			}
+			&.last{
+				@include last;
+			}
+
+			height: 50px;
+			background-color: $iron;
+			> p{
+				margin: 0;
+				@include vertical-center;
+			}
+			&:nth-child(2n) {
+				background-color: $wafer;
+			}
+			
+		}
+	}
+}
+
