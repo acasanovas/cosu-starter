@@ -13,4 +13,4 @@ function ready(fn) {
 
 ready(function(){
   console.info("Ready");
-})
+});
