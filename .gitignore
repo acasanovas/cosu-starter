@@ -26,6 +26,8 @@ Temporary Items
 *.css.map
 *.css
 
+# Bower
+bower_components
 
 # NODE-JS
 node_modules
