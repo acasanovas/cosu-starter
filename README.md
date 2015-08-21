@@ -9,7 +9,7 @@ Workflow
 
 Design
 ------
-**WeBoil** is design-free and does its best to provide no styling of its own, so it can be used on any and all types of project without dictating a look-and-feel.
+**WeBoil** is design-free and does its best to provide no styling of its own, so it can be used on any and all types of project without impose a look and feel.
 
 Directory structure
 -------------------
@@ -18,10 +18,10 @@ Directory structure
 ```
 app
 |
-|- css/                       # CSS
-|- fonts/                     # Fonts
-|- img/                       # Images
-|- js/                        # Javascript
+|- css/                        # CSS
+|- fonts/                      # Fonts
+|- img/                        # Images
+|- js/                         # JavaScript
 |- sass/
 |    |
 |    |– base/
@@ -67,7 +67,7 @@ app
 |    |– shame.scss            # Not proud things
 |    `– styles.scss           # Main Sass file
 |
-|- sassdoc/                   # Generated Sass documentation
+|- sassdoc/                   # SassDoc
 |- browserconfig.xml          # Custom Windows styles
 |- crossdomain.xml            # Cross-domain policy
 |- index.html                 # Default HTML skeleton
