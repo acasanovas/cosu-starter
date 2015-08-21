@@ -1,85 +1,101 @@
-CoSu Starter Toolkit
+Webapp boilerplate (WeBoil)
 ==========================
 
-This is a starter toolkit that uses [Sass](http://sass-lang.com/) and [Susy](http://susy.oddbird.net/) "Magic Grids" and is intended to start developing a Web project.
-With CoSu this developement will be fast and well structured, designed to be easily maintainable and extendable.
+**WeBoil** is my kickstarter tool using [Sass](http://sass-lang.com/), [Susy](http://susy.oddbird.net/), [Breakpoint](http://breakpoint-sass.com/) and [Normalize.css](https://necolas.github.io/normalize.css/), designed with scalability and performance in mind.
 
-Structuring a project on modules will allow you to reuse common parts on other projects, and this will incredibly increase your team workflow or even yours.
+Workflow
+--------
+**Weboil** workflow is automated and enhanced with [Gulp](http://gulpjs.com/), that offers a Sass documentation generator, CSS Autoprefixing, minified CSS output, Sass source maps, built-in preview server and synchronised browser testing.
+
+Design
+------
+**WeBoil** is design-free and does its best to provide no styling of its own, so it can be used on any and all types of project without dictating a look-and-feel.
 
 Directory structure
 -------------------
+**WeBoil** is focused on keeping things simple and obvious, and its approach happens to be quite similar to [SMACSS](https://smacss.com/)
+
 ```
-    package.json	# Grunt metadata and dependencies
-    index.html		# Starter HTML template
-    gruntfile.js	# Grunt configuration and tasks
-	Gemfile			# Gem project dependencies
-	config.rb		# Compass configuration file
-	.gitignore		# .gitignore file
-	components/
-	|
-	|-- sass/
-	|   |-- base/					# Defaults settings
-	|	|	|-- _mixins.scss 		# Custom mixins
-	|	|	|-- _functions.scss 	# Custom functions
-	|	|	|-- _reset.scss			# Resets elements
-	|	|	|-- _colors.scss 		# Defines colors
-	|	|	|-- _required.scss 		# Imports the required extensions
-	|	|	|-- _defaults.scss		# Default settings and values
-	|	|	|-- _typography.scss	# Sets up the fonts
-	|	|	`-- _index.scss 		# Imports everything on base
-	|	|
-	|   |-- layout/					# Specific styles
-	|	|	|-- _content.scss		# Section styles
-	|	|	|-- _footer.scss		# Footer styles
-	|	|	|-- _grid.scss			# Susy grid
-	|	|	|-- _header.scss		# Header styles
-	|	|	|-- _sidebar.scss		# Sidebar styles
-	|	|	`-- _index.scss 		# Imports everything on layout
-	|	|
-	|   |-- modules/				# Modular parts
-	|	|	|-- _buttons.scss		# Buttons
-	|	|	|-- _forms.scss			# Form elements
-	|	|	|-- _headings.scss		# Heading elements
-	|	|	|-- _images.scss		# Images and figures
-	|	|	|-- _links.scss			# Links
-	|	|	|-- _lists.scss			# Lists
-	|	|	|-- _paragraphs.scss	# Paragraph elements
-	|	|	`-- _index.scss 		# Imports everything on modules
-	|	|
-	|   |-- vendors/				# Third party components
-	|	|	|-- _pesticide.scss		# CSS pesticide
-	|	|	`-- _index.scss 		# Imports everything on vendors
-	|	|
-	|   `-- styles.scss 			# Main Sass file
-	|
-	`-- js/
-		`-- script.js 				# JS file
+app
+|
+|- css/                       # CSS
+|- fonts/                     # Fonts
+|- img/                       # Images
+|- js/                        # Javascript
+|- sass/
+|    |
+|    |– base/
+|    |   |– _base.scss         # Standard styles
+|    |   |– _reset.scss        # Reset
+|    |   |– _typography.scss   # Typography rules
+|    |   ...                   # Etc…
+|    |
+|    |– components/
+|    |   |– _headings.scss     # Headings
+|    |   |– _images.scss       # Images
+|    |   |– _links.scss        # Links
+|    |   |– _lists.scss        # Lists
+|    |   |– _paragraphs.scss   # Paragraphs
+|    |   ...                   # Etc…
+|    |
+|    |– layout/
+|    |   |– _footer.scss      # Footer
+|    |   |– _grid.scss        # Grid system
+|    |   |– _header.scss      # Header
+|    |   |– _sidebar.scss     # Sidebar
+|    |   ...                  # Etc…
+|    |
+|    |– pages/
+|    |   |– _home.scss        # Home specific styles
+|    |   ...                  # Etc…
+|    |
+|    |– themes/
+|    |   |– _theme.scss       # Default theme
+|    |   ...                  # Etc…
+|    |
+|    |– utils/
+|    |   |– _functions.scss   # Sass Functions
+|    |   |– _mixins.scss      # Sass Mixins
+|    |   |– _variables.scss   # Sass Variables
+|    |   ...                  # Etc…
+|    |
+|    |– vendors/
+|    |   |– _normalize.scss   # Normalize.css
+|    |   ...                  # Etc…
+|    |
+|    |
+|    |– shame.scss            # Not proud things
+|    `– styles.scss           # Main Sass file
+|
+|- sassdoc/                   # Generated Sass documentation
+|- browserconfig.xml          # Custom Windows styles
+|- crossdomain.xml            # Cross-domain policy
+|- index.html                 # Default HTML skeleton
+`- robots.txt                 # Web robots instructions
 ```
 
 Quick start
 -----------
 1. Clone this repository.
-2. Install the required Ruby gems - `bundle install`.
-3. Install the required Node modules - `npm install`.
-4. Ready, just run `grunt watch`.
+2. Download and install [NodeJS](https://nodejs.org/).
+3. Install Bower command line utility - `npm install -g bower`.
+4. Install Gulp globally - `npm install -g gulp`.
+5. Install the required Node modules - `npm install`.
+6. Install the required packages - `bower install`.
+7. Ready, just run `gulp`.
 
 Happy coding!
 
-Disclamer
----------
-This is an evolving project.
-
-Credits
--------
-- [SMACSS](https://smacss.com/)
-- [Compass](https://github.com/Compass/compass)
-- [Susy](https://github.com/ericam/susy)
-- [Grunt](https://github.com/gruntjs/grunt)
-- [BEM](http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/)
-- [Pesticide](https://github.com/mrmrs/pesticide)
+Used modules
+-------------
+- [Browsersync](http://www.browsersync.io/)
+- [gulp-autoprefier](https://github.com/sindresorhus/gulp-autoprefixer)
+- [gulp-minify-css](https://github.com/murphydanger/gulp-minify-css)
+- [gulp-sourcemaps](https://github.com/floridoo/gulp-sourcemaps)
+- [SassDoc](http://sassdoc.com/)
 
 License
 -------
 Copyright (c) 2015 - Albert Casanovas.
 
-Licensed under the [MIT License](https://github.com/acasanovas/cosu-starter/blob/master/LICENSE).
+Licensed under the [MIT License](https://github.com/acasanovas/WeBoil/blob/master/LICENSE).

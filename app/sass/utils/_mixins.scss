@@ -1,0 +1,165 @@
+// scss-lint:disable DuplicateProperty, VendorPrefix, PropertySpelling, ImportantRule
+
+// ============================================================================
+//  Mixins
+// ============================================================================
+
+/// Totally hides an element from screen readers and browsers
+@mixin hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+/// Reverse the effects of `hidden`
+/// @see {mixin} hidden
+@mixin visible {
+  display: block !important;
+  visibility: visible;
+}
+
+/// Make an element visually invisible
+@mixin invisible {
+  visibility: hidden;
+}
+
+
+///////////////////////////////////////////////////
+///////////////////////////////////////////////////
+///////////////////////////////////////////////////
+
+/// Helper to clear inner floats
+/// @author Nicolas Gallagher
+/// @link http://nicolasgallagher.com/micro-clearfix-hack/
+@mixin clearfix {
+  &::after {
+    clear: both;
+    content: '';
+    display: table;
+  }
+}
+
+/// Mixin helper to output vendor prefixes
+/// @author Hugo Giraudel
+/// @param {String} $property - Unprefixed CSS property
+/// @param {*} $value - Raw CSS value
+/// @param {List} $prefixes - List of prefixes to output
+@mixin prefixer($property, $value, $prefixes: ()) {
+  @each $prefix in $prefixes {
+    -#{$prefix}-#{$property}: $value;
+  }
+
+  #{$property}: $value;
+}
+
+/// Helper to size an element
+/// @author Hugo Giraudel
+///
+/// @param {Length} $width
+/// @param {Length} $height
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+
+/// Outputs the spec and prefixed versions of the `::selection` pseudo-element.
+/// @param {Bool} $current-selector [false] - If set to `true`, it takes the current element into consideration.
+///
+/// @example scss - Usage
+///   .element {
+///     @include selection(true) {
+///       background-color: #ffbb52;
+///     }
+///   }
+///
+/// @example css - CSS Output
+///   .element::-moz-selection {
+///     background-color: #ffbb52;
+///   }
+///
+///   .element::selection {
+///     background-color: #ffbb52;
+///   }
+
+@mixin selection($current-selector: false) {
+  @if $current-selector {
+    &::-moz-selection {
+      @content;
+    }
+
+    &::selection {
+      @content;
+    }
+  } @else {
+    ::-moz-selection {
+      @content;
+    }
+
+    ::selection {
+      @content;
+    }
+  }
+}
+
+/// Controls the appearance (only) of selection. This does not have any affect on actual selection operation.
+/// @param {Map} $value [none] - Values: none, text, all, element
+@mixin user-select($value: none) {
+  @include prefixer(user-select, $value, webkit moz ms spec);
+}
+
+
+/// Create a fully formed type style (sizing and vertical rhythm) by passing in a single value
+/// @author Harry Roberts
+/// @link https://github.com/inuitcss/tools.mixins/blob/master/_tools.mixins.scss
+///
+/// @param {String} $font-size - font-size in pixels
+/// @param {Number | Inherit | Normal} $line-height [auto] - line-height
+///
+/// @example scss - Usage
+///   .foo {
+///     @include font-size(12px);
+///   }
+///
+/// @example css - CSS Output
+///   .foo {
+///      font-size: 12px;
+///      font-size: 0.75rem;
+///      line-height: 2;
+///   }
+///
+/// @example scss - Usage with `line-height`
+///   .foo {
+///     @include inuit-font-size(12px, 1.5);
+///    }
+///
+/// @example css - CSS Output
+///   .foo {
+///     font-size: 12px;
+///     font-size: 0.75rem;
+///     line-height: 1.5;
+///   }
+///
+/// @example scss - Usage with `line-height` none
+///   .foo {
+///     @include inuit-font-size(12px, none);
+///   }
+///
+/// @example css - CSS Output
+///   .foo {
+///     font-size: 12px;
+///     font-size: 0.75rem;
+///   }
+@mixin font-size($font-size, $line-height: auto) {
+  font-size: $font-size;
+  font-size: ($font-size / $font-size-default) * 1rem;
+
+  @if $line-height == auto {
+    line-height: ceil($font-size / $line-height-default) * ($line-height-default / $font-size);
+  } @else {
+    @if (type-of($line-height) == number or $line-height == inherit or $line-height == normal) {
+      line-height: $line-height;
+    } @elseif ($line-height != none and $line-height != false) {
+      @warn "D'oh! '#{$line-height}' is not a valid value for `line-height`."
+    }
+
+  }
+}

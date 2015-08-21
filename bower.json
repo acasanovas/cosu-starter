@@ -1,0 +1,21 @@
+{
+  "name": "WeBoil",
+  "version": "0.0.1",
+  "authors": [
+    "Albert Casanovas <albert@project2be.com>"
+  ],
+  "description": "Webapp boilerplate",
+  "license": "MIT",
+  "homepage": "https://github.com/acasanovas/WeBoil",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "susy": "~2.2.5",
+    "breakpoint-sass": "~2.6.1"
+  }
+}

@@ -1,0 +1,30 @@
+// ============================================================================
+//  Headings
+// ============================================================================
+
+// h1 ... h6
+h1 {
+  @include font-size($font-size-tera);
+}
+
+h2 {
+  @include font-size($font-size-giga);
+}
+
+h3 {
+  @include font-size($font-size-mega);
+}
+
+h4 {
+  @include font-size($font-size-kilo);
+}
+
+h5 {
+  @include font-size($font-size-regular);
+}
+
+h6 {
+  @include font-size($font-size-deca);
+}
+
+// Add custom breakpoints

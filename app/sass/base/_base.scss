@@ -1,0 +1,29 @@
+// scss-lint:disable ImportantRule
+
+// ============================================================================
+//  Base
+// ============================================================================
+
+html {
+  font-style: normal;
+  font-weight: $font-weight-normal;
+  min-height: 100%;
+  overflow-y: scroll;
+}
+
+body {
+  background: $white;
+  color: $black;
+}
+
+* {
+  @include selection {
+    background-color: $black;
+    color: $white;
+  }
+}
+
+.hidden,
+[hidden] {
+  display: none !important;
+}

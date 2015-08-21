@@ -1,0 +1,103 @@
+// Table of Contents
+//
+// a. Fonts
+// b. Colors
+// c. Breakpoints
+
+//	a. Fonts
+// ------------------------------------------------
+
+// Defines the default font stack
+// Roboto
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+
+// Global font sizes
+// yocto, zepto, atto, femto, pico, nano, micro, milli, centi, deci, deca, REGULAR, hecto, kilo, mega, giga, tera, peta, exa, zetta, yotta
+///
+$font-size-nano			: 9px !default;
+///
+$font-size-micro		: 10px !default;
+///
+$font-size-milli		: 11px !default;
+///
+$font-size-centi		: 12px !default;
+///
+$font-size-deci			: 13px !default;
+///
+$font-size-deca	        : 14px !default;
+///
+$font-size-regular    	: 16px !default;
+///
+$font-size-hecto		: 18px !default;
+///
+$font-size-kilo			: 20px !default;
+///
+$font-size-mega			: 24px !default;
+///
+$font-size-giga			: 30px !default;
+///
+$font-size-tera			: 36px !default;
+
+// Global font weights
+///
+$font-weight-thin			: 100 !default;
+///
+$font-weight-extralight     : 200 !default;
+///
+$font-weight-light		  	: 300 !default;
+///
+$font-weight-normal			: 400 !default;
+///
+$font-weight-medium			: 500 !default;
+///
+$font-weight-semibold	    : 600 !default;
+///
+$font-weight-bold			: 700 !default;
+///
+$font-weight-extrabold		: 800 !default;
+///
+$font-weight-ultrabold		: 900 !default;
+
+
+// Font defaults styles
+/// Default primary font
+$font-primary            : 'Roboto', sans-serif !default;
+/// Default font size
+$font-size-default       : $font-size-regular !default;
+/// Default font weight
+$font-weight-default     : $font-weight-normal !default;
+/// Default line height
+$line-height-default     : 24px !default;
+/// Default spacing unit
+$spacing-unit-default    : $line-height-default;
+
+
+//	b. Colors
+// ------------------------------------------------
+
+// Default color palette
+///
+$white				: #fff !default;
+///
+$black				: #000 !default;
+
+//	c. Breakpoints
+// ------------------------------------------------
+
+// Default media query breakpoints
+/// Mobile small breakpoint
+$mobile-small		: 15em !default; //240px
+/// Mobile large breakpoint
+$mobile-large		: 20em !default; //320px
+/// Tablet small breakpoint
+$tablet-small		: 30em !default; //480px
+/// Tablet large breakpoint
+$tablet-large		: 48em !default; //768px
+/// Screen small breakpoint
+$screen-small		: 64em !default; //1024px
+/// Screen large breakpoint
+$screen-large		: 80em !default; //1280px
+/// Screen x large breakpoint
+$screen-x-large		: 82.5em !default; //1320px
+/// Screen xx large breakpoint
+$screen-xx-large	: 107.5em !default; //1720px

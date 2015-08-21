@@ -1,0 +1,43 @@
+@charset 'UTF-8';
+
+// ============================================================================
+//  Grid
+// ============================================================================
+
+// Grid setup
+// ----------------------------------------------------------------------------
+$susy: (
+  columns: 12,
+  gutters: .25,
+  global-box-sizing: Border-box,
+  debug: (
+    image: hide, // Options: show | hide | show-columns | show-baseline
+  ),
+  use-custom: (
+    rem: true,
+  )
+);
+
+// Redefine box-sizing on the root element
+html {
+  @include prefixer(box-sizing, border-box, webkit moz);
+}
+
+
+// Make all elements inherit from `html` box-sizing
+*,
+*:before,
+*:after {
+  @include prefixer(box-sizing, inherit, webkit moz);
+}
+
+
+
+.container {
+  @include container();
+  padding: gutter();
+
+  @include breakpoint($screen-large) {
+    @include container($screen-large);
+  }
+}

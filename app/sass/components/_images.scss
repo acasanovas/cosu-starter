@@ -1,0 +1,20 @@
+// scss-lint:disable QualifyingElement
+
+// ============================================================================
+//  Images
+// ============================================================================
+
+// Fluid responsive images & `alt` text hacks
+img {
+  display: block;
+  font-style: italic; // alt text
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle; // removes the whitespace under `img` elements
+}
+
+// If `width` and/or `height` are explicit, it makes the image not fluid
+img[width],
+img[height] {
+  max-width: none;
+}

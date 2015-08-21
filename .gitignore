@@ -24,6 +24,7 @@ Temporary Items
 # SASS
 .sass-cache
 *.css.map
+*.css
 
 
 # NODE-JS

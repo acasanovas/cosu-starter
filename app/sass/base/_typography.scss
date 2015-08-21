@@ -1,0 +1,38 @@
+// scss-lint:disable DuplicateProperty, VendorPrefix
+
+// ============================================================================
+//  Typography
+// ============================================================================
+
+body {
+  font-family: $font-primary;
+  font-size: ($font-size-default / 16px) * 1em;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  line-height: $line-height-default / $font-size-default;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+// Consistent vertical rhythm.
+// @link csswizardry.com/2012/06/single-direction-margin-declarations
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+dl,
+blockquote,
+p,
+address,
+hr,
+table,
+fieldset,
+figure,
+pre {
+  margin-bottom: $spacing-unit-default;
+  margin-bottom: ($spacing-unit-default / $font-size-default) * 1rem;
+}

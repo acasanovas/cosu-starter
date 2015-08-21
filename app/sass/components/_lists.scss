@@ -1,0 +1,22 @@
+// ============================================================================
+//  Lists
+// ============================================================================
+
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+// Remove extra vertical space on nesting lists
+li {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+
+  > ul,
+  > ol {
+    margin-bottom: 0;
+  }
+}

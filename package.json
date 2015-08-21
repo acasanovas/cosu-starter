@@ -1,29 +1,34 @@
 {
-  "name": "CoSu-Starter-Toolkit",
-  "description": "A starter toolkit based on Compass and Susy",
+  "name": "WeBoil",
   "version": "0.0.1",
-  "homepage": "https://github.com/acasanovas/cosu-starter",
+  "description": "WeBoil - Webapp boilerplate",
+  "main": "app/index.html",
+  "homepage": "https://github.com/acasanovas/WeBoil",
   "author": {
     "name": "Albert Casanovas",
     "email": "albert@project2be.com"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/acasanovas/cosu-starter.git"
+    "url": "git://github.com/acasanovas/WeBoil.git"
   },
   "bugs": {
-    "url": "https://github.com/acasanovas/cosu-starter/issues"
+    "url": "https://github.com/acasanovas/WeBoil/issues"
   },
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/acasanovas/cosu-starter/blob/master/LICENSE"
+      "url": "https://github.com/acasanovas/WeBoil/blob/master/LICENSE"
     }
   ],
   "devDependencies": {
-    "grunt": "~0.4.5",
-    "grunt-contrib-watch": "^0.6.1",
-    "grunt-contrib-uglify": "^0.7.0",
-    "grunt-contrib-compass": "^1.0.1"
+    "browser-sync": "^2.7.13",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^2.3.1",
+    "gulp-minify-css": "^1.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.0.4",
+    "gulp-sourcemaps": "^1.5.2",
+    "sassdoc": "^2.1.15"
   }
 }
