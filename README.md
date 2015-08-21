@@ -1,7 +1,7 @@
-Webapp boilerplate (WeBoil)
+Web app boilerplate (WeBoil)
 ==========================
 
-**WeBoil** is my kickstarter tool using [Sass](http://sass-lang.com/), [Susy](http://susy.oddbird.net/), [Breakpoint](http://breakpoint-sass.com/) and [Normalize.css](https://necolas.github.io/normalize.css/), designed with scalability and performance in mind.
+**WeBoil** is my kickstarter [web app](https://en.wikipedia.org/wiki/Web_application) tool using [Sass](http://sass-lang.com/), [Susy](http://susy.oddbird.net/), [Breakpoint](http://breakpoint-sass.com/) and [Normalize.css](https://necolas.github.io/normalize.css/), designed with scalability and performance in mind.
 
 Workflow
 --------
