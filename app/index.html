@@ -33,6 +33,93 @@
 
 		<div class="main">
 			<div class="container">
+				<h1>Webapp boilerplate (WeBoil)</h1>
+				<p><strong>WeBoil</strong> is my kickstarter tool using <a href="http://sass-lang.com/">Sass</a>, <a href="http://susy.oddbird.net/">Susy</a>, <a href="http://breakpoint-sass.com/">Breakpoint</a> and <a href="https://necolas.github.io/normalize.css/">Normalize.css</a>, designed with scalability and performance in mind.</p>
+				<h3>Workflow</h3>
+				<p><strong>WeBoil</strong> workflow is automated and enhanced with <a href="http://gulpjs.com/">Gulp</a>, that offers a Sass documentation generator, CSS Autoprefixing, minified CSS output, Sass source maps, built-in preview server and synchronised browser testing.</p>
+				<h3>Design</h3>
+				<p><strong>WeBoil</strong> is design-free and does its best to provide no styling of its own, so it can be used on any and all types of project without imposing a "look and feel".</p>
+				<h3>Directory structure</h3>
+				<p><strong>WeBoil</strong> is focused on keeping things simple and obvious, and its approach happens to be quite similar to <a href="https://smacss.com/">SMACSS</a>.</p>
+				<pre>
+app
+|
+|- css/                        # CSS
+|- fonts/                      # Fonts
+|- img/                        # Images
+|- js/                         # JavaScript
+|- sass/
+|    |
+|    |– base/
+|    |   |– _base.scss         # Standard styles
+|    |   |– _reset.scss        # Reset
+|    |   |– _typography.scss   # Typography rules
+|    |   ...                   # Etc…
+|    |
+|    |– components/
+|    |   |– _headings.scss     # Headings
+|    |   |– _images.scss       # Images
+|    |   |– _links.scss        # Links
+|    |   |– _lists.scss        # Lists
+|    |   |– _paragraphs.scss   # Paragraphs
+|    |   ...                   # Etc…
+|    |
+|    |– layout/
+|    |   |– _footer.scss      # Footer
+|    |   |– _grid.scss        # Grid system
+|    |   |– _header.scss      # Header
+|    |   |– _sidebar.scss     # Sidebar
+|    |   ...                  # Etc…
+|    |
+|    |– pages/
+|    |   |– _home.scss        # Home specific styles
+|    |   ...                  # Etc…
+|    |
+|    |– themes/
+|    |   |– _theme.scss       # Default theme
+|    |   ...                  # Etc…
+|    |
+|    |– utils/
+|    |   |– _functions.scss   # Sass Functions
+|    |   |– _mixins.scss      # Sass Mixins
+|    |   |– _variables.scss   # Sass Variables
+|    |   ...                  # Etc…
+|    |
+|    |– vendors/
+|    |   |– _normalize.scss   # Normalize.css
+|    |   ...                  # Etc…
+|    |
+|    |
+|    |– shame.scss            # Not proud things
+|    `– styles.scss           # Main Sass file
+|
+|- sassdoc/                   # SassDoc
+|- browserconfig.xml          # Custom Windows styles
+|- crossdomain.xml            # Cross-domain policy
+|- index.html                 # Default HTML skeleton
+`- robots.txt                 # Web robots instructions
+				</pre>
+				<h3>Quick start</h3>
+				<ol>
+					<li>Clone this repository.</li>
+					<li>Download and install <a href="https://nodejs.org/">NodeJS</a>.</li>
+					<li>Install Bower and Gulp - <code>npm install -g bower gulp</code>.</li>
+					<li>Install the required Node modules - <code>npm install</code>.</li>
+					<li>Install the required packages - <code>bower install</code>.</li>
+					<li>Ready, just run <code>gulp</code>.</li>
+				</ol>
+				<p>Happy coding!</p>
+				<h3>Used modules</h3>
+				<ul>
+					<li><a href="http://www.browsersync.io/">Browsersync</a></li>
+					<li><a href="https://github.com/sindresorhus/gulp-autoprefixer">gulp-autoprefixer</a></li>
+					<li><a href="https://github.com/murphydanger/gulp-minify-css">gulp-minify-css</a></li>
+					<li><a href="https://github.com/floridoo/gulp-sourcemaps">gulp-sourcemaps</a></li>
+					<li><a href="http://sassdoc.com/">SassDoc</a></li>
+				</ul>
+				<h3>License</h3>
+				<p>Copyright (c) 2015 - Albert Casanovas.</p>
+				<p>Licensed under the <a href="https://github.com/acasanovas/WeBoil/blob/master/LICENSE">MIT License</a>.</p>
 			</div>
 		</div>
 

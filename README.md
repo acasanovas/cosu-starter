@@ -5,15 +5,15 @@ Webapp boilerplate (WeBoil)
 
 Workflow
 --------
-**Weboil** workflow is automated and enhanced with [Gulp](http://gulpjs.com/), that offers a Sass documentation generator, CSS Autoprefixing, minified CSS output, Sass source maps, built-in preview server and synchronised browser testing.
+**WeBoil** workflow is automated and enhanced with [Gulp](http://gulpjs.com/), that offers a Sass documentation generator, CSS Autoprefixing, minified CSS output, Sass source maps, built-in preview server and synchronised browser testing.
 
 Design
 ------
-**WeBoil** is design-free and does its best to provide no styling of its own, so it can be used on any and all types of project without impose a look and feel.
+**WeBoil** is design-free and does its best to provide no styling of its own, so it can be used on any and all types of project without imposing a "look and feel".
 
 Directory structure
 -------------------
-**WeBoil** is focused on keeping things simple and obvious, and its approach happens to be quite similar to [SMACSS](https://smacss.com/)
+**WeBoil** is focused on keeping things simple and obvious, and its approach happens to be quite similar to [SMACSS](https://smacss.com/).
 
 ```
 app
@@ -78,11 +78,10 @@ Quick start
 -----------
 1. Clone this repository.
 2. Download and install [NodeJS](https://nodejs.org/).
-3. Install Bower command line utility - `npm install -g bower`.
-4. Install Gulp globally - `npm install -g gulp`.
-5. Install the required Node modules - `npm install`.
-6. Install the required packages - `bower install`.
-7. Ready, just run `gulp`.
+3. Install Bower and Gulp - `npm install -g bower gulp`.
+4. Install the required Node modules - `npm install`.
+5. Install the required packages - `bower install`.
+6. Ready, just run `gulp`.
 
 Happy coding!
 

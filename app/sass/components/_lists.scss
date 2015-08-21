@@ -2,13 +2,6 @@
 //  Lists
 // ============================================================================
 
-ul,
-ol {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
 // Remove extra vertical space on nesting lists
 li {
   height: 100%;
@@ -19,4 +12,13 @@ li {
   > ol {
     margin-bottom: 0;
   }
+}
+
+// scss-lint:disable DuplicateProperty
+// Left indentation hack
+ul,
+ol,
+dd {
+  margin-left: 2 * $spacing-unit-default;
+  margin-left: (2 * $spacing-unit-default / $line-height-default) * 1rem;
 }

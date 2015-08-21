@@ -3,14 +3,11 @@
 // ============================================================================
 
 a {
-  color: $black;
   text-decoration: none;
 
-  &:hover {
-    color: $black;
-  }
-
-  &:visited {
-    color: $black;
+  &:hover,
+  &:active {
+    outline: 0;
+    text-decoration: underline;
   }
 }

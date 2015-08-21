@@ -1,7 +1,39 @@
+// scss-lint:disable ImportantRule
+
 // ============================================================================
 //  Home
 // ============================================================================
 
+// A few styles for `pre` and `code` tags, feel free to remove it
 .main {
+  .container > *:last-child {
+    margin-bottom: 0 !important;
+  }
 
+  pre,
+  code {
+    background-color: rgba($black, .04);
+    border-radius: 3px;
+    font-size: 85%;
+  }
+
+  pre {
+    line-height: 1.45;
+    overflow: auto;
+    overflow-x: auto;
+    padding: 16px;
+  }
+
+  code {
+    margin: 0;
+    padding: 0;
+    padding-bottom: .2em;
+    padding-top: .2em;
+
+    &::before,
+    &::after {
+      content: '\00a0';
+      letter-spacing: -.2em;
+    }
+  }
 }
