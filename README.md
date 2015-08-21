@@ -5,7 +5,7 @@ Web app boilerplate (WeBoil)
 
 Workflow
 --------
-**WeBoil** workflow is automated and enhanced with [Gulp](http://gulpjs.com/), that offers a Sass documentation generator, CSS Autoprefixing, minified CSS output, Sass source maps, built-in preview server and synchronised browser testing.
+**WeBoil** workflow is automated and enhanced with [Gulp](http://gulpjs.com/), that offers a Sass documentation generator, CSS Autoprefixing, JSHint, SCSS linter, minified CSS output, Sass source maps, built-in preview server and synchronised browser testing.
 
 Design
 ------
@@ -78,8 +78,8 @@ Quick start
 -----------
 1. Clone this repository.
 2. Download and install [NodeJS](https://nodejs.org/).
-3. Install SCSS linter - `gem install scss_lint`.
-4. Install Bower and Gulp - `npm install -g bower gulp`.
+3. Install Bower and Gulp - `npm install -g bower gulp`.
+4. Install SCSS lint - `gem install scss_lint`.
 5. Install the required Node modules - `npm install`.
 6. Install the required packages - `bower install`.
 7. Ready, just run `gulp`.
@@ -90,7 +90,9 @@ Used modules
 -------------
 - [Browsersync](http://www.browsersync.io/)
 - [gulp-autoprefixer](https://github.com/sindresorhus/gulp-autoprefixer)
+- [gulp-jshint](https://github.com/spalger/gulp-jshint)
 - [gulp-minify-css](https://github.com/murphydanger/gulp-minify-css)
+- [gulp-scss-lint](https://github.com/juanfran/gulp-scss-lint)
 - [gulp-sourcemaps](https://github.com/floridoo/gulp-sourcemaps)
 - [SassDoc](http://sassdoc.com/)
 
