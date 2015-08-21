@@ -1,0 +1,5 @@
+exclude: './app/sass/vendors/**'
+
+linters:
+    EmptyRule:
+        enabled: false
