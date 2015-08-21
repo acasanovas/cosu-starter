@@ -1,4 +1,4 @@
-exclude: './app/sass/vendors/**'
+exclude: 'app/sass/vendors/**'
 
 linters:
     EmptyRule:

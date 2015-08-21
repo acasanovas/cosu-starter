@@ -89,7 +89,7 @@ Happy coding!
 Used modules
 -------------
 - [Browsersync](http://www.browsersync.io/)
-- [gulp-autoprefier](https://github.com/sindresorhus/gulp-autoprefixer)
+- [gulp-autoprefixer](https://github.com/sindresorhus/gulp-autoprefixer)
 - [gulp-minify-css](https://github.com/murphydanger/gulp-minify-css)
 - [gulp-sourcemaps](https://github.com/floridoo/gulp-sourcemaps)
 - [SassDoc](http://sassdoc.com/)
