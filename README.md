@@ -100,4 +100,4 @@ License
 -------
 Copyright (c) 2015 - Albert Casanovas.
 
-Licensed under the [MIT License](https://github.com/acasanovas/WeBoil/blob/master/LICENSE).
+Licensed under the [GNU GPLv3](https://github.com/acasanovas/WeBoil/blob/master/LICENSE).
